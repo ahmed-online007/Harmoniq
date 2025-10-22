@@ -1,0 +1,73 @@
+.flex{
+    display: flex;
+}
+
+.justify-content{
+    justify-content: center;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.p-1{
+    padding: 20px;
+}
+
+.cl-gr{
+    color: rgb(204, 204, 204);
+}
+
+.cl-gr:hover{
+    color: white;
+}
+
+.point{
+    cursor: pointer;
+}
+
+.back{
+  background-color: red;
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 10px;              /* scrollbar width */
+  height: 10px;             /* for horizontal scroll */
+}
+
+
+::-webkit-scrollbar-button{
+    display:none;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;      /* dark track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;         /* scrollbar handle */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;         /* on hover */
+}
+
+/* REMOVE ARROW BUTTONS COMPLETELY */
+::-webkit-scrollbar-button:single-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;              /* makes it thin */
+  scrollbar-color: #444 #1e1e1e;      /* thumb | track */
+}
+

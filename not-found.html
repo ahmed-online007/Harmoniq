@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at center, #0d1117, #000);
+      font-family: 'Poppins', sans-serif;
+      color: #e0e0e0;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      position: relative;
+      padding: 2rem;
+    }
+    .glow {
+      font-size: 9rem;
+      font-weight: 800;
+      color: #00ffc6;
+      text-shadow: 0 0 10px #00ffc6, 0 0 30px #00ffc6, 0 0 60px #00ffc6;
+      animation: flicker 2s infinite;
+    }
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+      }
+      20%, 24%, 55% {
+        opacity: 0.4;
+      }
+    }
+    h2 {
+      margin-top: 1rem;
+      font-size: 1.8rem;
+      color: #9aa0b4;
+    }
+    p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #6b7280;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background: linear-gradient(90deg, #00ffc6, #009dff);
+      color: #000;
+      font-weight: 600;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 20px rgba(0,255,198,0.3);
+    }
+    a.button:hover {
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 0 40px rgba(0,255,198,0.5);
+    }
+    .bg-animation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(0, 255, 198, 0.05);
+      animation: move 12s linear infinite;
+    }
+    @keyframes move {
+      0% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-60px) scale(1.2); }
+      100% { transform: translateY(0) scale(1); }
+    }
+
+    /* RESPONSIVE STYLES */
+    @media (max-width: 1024px) {
+      .glow { font-size: 7rem; }
+      h2 { font-size: 1.6rem; }
+    }
+    @media (max-width: 768px) {
+      .glow { font-size: 6rem; }
+      p { font-size: 0.95rem; }
+    }
+    @media (max-width: 480px) {
+      .glow { font-size: 4.5rem; }
+      h2 { font-size: 1.4rem; }
+      p { font-size: 0.9rem; }
+      a.button { padding: 0.7rem 1.2rem; font-size: 0.9rem; }
+    }
+    @media (max-width: 360px) {
+      .glow { font-size: 3.8rem; }
+      h2 { font-size: 1.2rem; }
+      p { font-size: 0.85rem; }
+      a.button { font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="bg-animation"></div>
+    <h1 class="glow">404</h1>
+    <h2>Oops! Page Not Found</h2>
+    <p>The page you are looking for does not exist or has been moved. Do not worry, let us get you back home.</p>
+    <a href="/" class="button">Go Home</a>
+  </div>
+
+  <script>
+    // create floating circles
+    const bg = document.querySelector('.bg-animation');
+    for(let i=0;i<15;i++){
+      const c = document.createElement('div');
+      const size = Math.random()*80+20;
+      c.classList.add('circle');
+      c.style.width = `${size}px`;
+      c.style.height = `${size}px`;
+      c.style.left = `${Math.random()*100}%`;
+      c.style.top = `${Math.random()*100}%`;
+      c.style.animationDuration = `${8+Math.random()*6}s`;
+      bg.appendChild(c);
+    }
+  </script>
+</body>
+</html>

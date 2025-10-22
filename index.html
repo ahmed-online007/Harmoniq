@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmoniq - feel from heart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wdth,wght@75..100,100..900&family=Smooch+Sans:wght@100..900&family=Varela+Round&family=Work+Sans:wght@100..900&display=swap"
+        rel="stylesheet">
+
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wdth,wght@75..100,100..900&family=Smooch+Sans:wght@100..900&family=Varela+Round&family=Work+Sans:wght@100..900&display=swap"
+        rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left">
+            <div class="close invert">
+                <img src="images/cross.svg" alt="Server down">
+            </div>
+            <div class="home bg-blkc">
+                <div class="logo"><img class="logo-width invert" src="images/favicon.png" alt="Server down"><span id="title">Harmoniq
+                        Sounds</span></div>
+                <ul>
+                    <li class="bold point">
+                        <img class="invert" src="images/home.svg" alt="Server down">
+                        <a class="a" href="index.html">Home</a>
+                    </li>
+                    <li class="bold cl-gr point">
+                        <img class="invert" src="images/search.svg" alt="Server down">
+                        <a class="a" href="not-found.html" style="color: rgb(192, 192, 192);">Search</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="library bg-blkc p-g1">
+                <div class="heading ">
+                    <img class="invert point" src="images/playlist.svg" alt="Server down">
+                    <h3 class="cl-gr point">
+                        Suggested Library
+                    </h3>
+                </div>
+
+                <div class="songlist">
+                    <ul id="mylist">
+
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="not-found.html">Legal</a></div>
+                    <div><a href="not-found.html">Privacy Center</a></div>
+                    <div><a href="not-found.html">Privacy Podivcy</a></div>
+                    <div><a href="not-found.html">Cookies</a></div>
+                    <div><a href="not-found.html">Ads</a></div>
+                    <div><a href="not-found.html">Accessibidivty</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-blkc">
+            <div class="header">
+                <div class="nav">
+                    <img class="hamburger invert" src="images/hamburger.svg" alt="Server down">
+                    <svg width="40px" height="40px" viewBox="0 0 20 30" xmlns="http://www.w3.org/2000/svg" fill="gray">
+                        <text x="0" y="24" font-size="30" font-family="Arial">&lt;</text>
+                    </svg>
+
+                    <svg width="40px" height="40px" viewBox="0 0 20 30" xmlns="http://www.w3.org/2000/svg" fill="gray">
+                        <text x="0" y="24" font-size="30" font-family="Arial">&gt;</text>
+                    </svg>
+                </div>
+                <div class="buttons">
+                    <button class="cl-gr" id="Signup">
+                        <a href="not-found.html">Signup</a>
+                    </button>
+                    <button>
+                        <a href="not-found.html">Login</a>
+                    </button>
+                </div>
+            </div>
+            <div class="spotifyplaylist">
+                <h3>Our Recommended PLaylist</h3>
+                <div class="cardcontainer">
+                    <div data-sn="Kun Anta - Humood Alkhuder.mp3" class="card">
+                        <div class="play">
+                            <svg width="50" height="45" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"
+                                style="cursor: pointer;">
+                                <circle cx="30" cy="30" r="30" fill="#1fdf64" />
+                                <polygon points="24,18 24,42 42,30" fill="black" />
+                            </svg>
+                        </div>
+
+                        <img src="images/kunatntaa.jpeg" alt="Server down">
+                        <h4>Kun anta</h4>
+                        <p>"Kun Anta" is an uplifting Arabic nasheed promoting self-acceptance, authenticity, and inner
+                            peace.</p>
+                    </div>
+                    <div data-sn="The Way of The Tears - Muhammad al Muqit.mp3" class="card">
+                        <div class="play">
+                            <svg width="50" height="45" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"
+                                style="cursor: pointer;">
+                                <circle cx="30" cy="30" r="30" fill="#1fdf64" />
+                                <polygon points="24,18 24,42 42,30" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="images/thewayofthetears.jpeg" alt="Server down">
+                        <h4>The way of the Tears</h4>
+                        <p>The Way of the Tears reveals silent strength.</p>
+                    </div>
+                    <div data-sn="Wedding Nasheed - Mohammad Al Muqit.mp3" class="card">
+                        <div class="play">
+                            <svg width="50" height="45" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"
+                                style="cursor: pointer;">
+                                <circle cx="30" cy="30" r="30" fill="#1fdf64" />
+                                <polygon points="24,18 24,42 42,30" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="images/wedding.jpeg" alt="Server down">
+                        <h4>Wedding nasheed</h4>
+                        <p>Wedding nasheed echoes love, joy, and heartfelt blessings.</p>
+                    </div>
+
+                    <div data-sn="Ya Nabi Salam Alayka - Maher Zain.mp3" class="card">
+                        <div class="play">
+                            <svg width="50" height="45" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"
+                                style="cursor: pointer;">
+                                <circle cx="30" cy="30" r="30" fill="#1fdf64" />
+                                <polygon points="24,18 24,42 42,30" fill="black" />
+                            </svg>
+                        </div>
+
+                        <img src="images/yanabisalamualaika.jpeg" alt="Server down">
+                        <h4>Ya Nabi Salam Alayka</h4>
+                        <p>Heart-touching tribute to the Prophet — peaceful, soulful, timeless melody.</p>
+                    </div>
+
+
+
+
+                </div>
+                <div class="playbar down">
+                    <div class="abovebar">
+
+                        <div class="songinfo">
+                            
+                        </div>
+                        <div class="songbuttons">
+                            <img class="svg-e invert" id="previous" src="images/previous-999-svgrepo-com.svg" alt="Server down">
+                            <img class="svg-e invert" id="play" src="images/play-svgrepo-com.svg" alt="Server down">
+                            <img class="svg-e invert" id="next" src="images/next-998-svgrepo-com.svg" alt="Server down">
+                        </div>
+                        <div class="songtime">00:00 / 00:00</div>
+                        
+                        
+                    </div>
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script-chatgpt.js"></script>
+</body>
+
+</html>
