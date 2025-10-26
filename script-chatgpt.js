@@ -12,7 +12,7 @@ function formatTime(seconds) {
 }
 
 async function getsongs() {
-    let a = await fetch("http://192.168.0.104:3000/songs/");
+    let a = await fetch("songs/");
     let response = await a.text();
     let div = document.createElement('div');
     div.innerHTML = response;
@@ -155,3 +155,4 @@ async function main() {
 }
 
 main();
+
