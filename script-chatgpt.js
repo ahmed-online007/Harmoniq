@@ -25,12 +25,12 @@ async function getsongs() {
 }
 
 function playmusic(track) {
-    currentsong.src = "/songs/" + track;
+    currentsong.src = "songs/" + track;
     currentsong.play();
 }
 
 async function main() {
-    songs = await getsongs();
+    songs = ['Kun Anta - Humood Alkhuder.mp3', 'The Way of The Tears - Muhammad al Muqit.mp3', 'Wedding Nasheed - Mohammad Al Muqit.mp3', 'Ya Nabi Salam Alayka - Maher Zain.mp3']
 
     let songul = document.querySelector(".songlist ul");
 
@@ -159,5 +159,6 @@ async function main() {
 }
 
 main();
+
 
 
