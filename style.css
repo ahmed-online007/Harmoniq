@@ -285,7 +285,6 @@ button a{
 
 .playbar {
     position: absolute;
-    bottom: 0;
     padding: 12px;
     background-color: #282828;
     width: 90%;
@@ -293,7 +292,7 @@ button a{
     height: 60px;
     padding-top: 20px;
     transition: bottom 0.4s linear;
-    bottom: 5%;
+    bottom: 10%;
 }
 
 .down{
@@ -580,4 +579,5 @@ button a{
     .spotifyplaylist h3{
         margin-left: 30px;
     }
+
 }
