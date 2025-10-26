@@ -30,7 +30,14 @@ function playmusic(track) {
 }
 
 async function main() {
-    songs = ['Kun Anta - Humood Alkhuder.mp3', 'The Way of The Tears - Muhammad al Muqit.mp3', 'Wedding Nasheed - Mohammad Al Muqit.mp3', 'Ya Nabi Salam Alayka - Maher Zain.mp3', 'Taweel Al Shawq - Ahmed Bukhater.mp3', 'Love and Life - Baraa Masoud.mp3']
+    const songs = [
+      "Kun%20Anta%20-%20Humood%20Alkhuder.mp3",
+      "The%20Way%20of%20The%20Tears%20-%20Muhammad%20al%20Muqit.mp3",
+      "Wedding%20Nasheed%20-%20Mohammad%20Al%20Muqit.mp3",
+      "Ya%20Nabi%20Salam%20Alayka%20-%20Maher%20Zain.mp3",
+      "Taweel%20Al%20Shawq%20-%20Ahmed%20Bukhater.mp3",
+      "Love%20and%20Life%20-%20Baraa%20Masoud.mp3"
+    ];
 
     let songul = document.querySelector(".songlist ul");
 
@@ -159,6 +166,7 @@ async function main() {
 }
 
 main();
+
 
 
 
