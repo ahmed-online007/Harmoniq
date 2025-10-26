@@ -77,6 +77,10 @@ async function main() {
         if (!isDragging && !isNaN(currentsong.duration)) {
             songtime.innerHTML = `${formatTime(currentsong.currentTime)} / ${formatTime(currentsong.duration)}`;
             circle.style.left = (currentsong.currentTime / currentsong.duration) * 100 + '%';
+            if (currentsong.currentTime == currentsong.duration) {
+                playBtn.src = 'images/refresh.svg';
+                playBtn.classList.remove('width');
+            };
         }
     });
 
@@ -155,4 +159,5 @@ async function main() {
 }
 
 main();
+
 
