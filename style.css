@@ -292,7 +292,7 @@ button a{
     height: 60px;
     padding-top: 20px;
     transition: bottom 0.4s linear;
-    bottom: 10%;
+    bottom: 17%;
 }
 
 .down{
@@ -581,3 +581,4 @@ button a{
     }
 
 }
+
