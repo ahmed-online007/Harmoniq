@@ -292,7 +292,7 @@ button a{
     height: 60px;
     padding-top: 20px;
     transition: bottom 0.4s linear;
-    bottom: 17%;
+    bottom: 3%;
 }
 
 .down{
@@ -450,6 +450,7 @@ button a{
     .right{
         width: 100vw;
         height: 99.5vh;
+        padding-right: 0px;
     }
     
     .playbar{
@@ -463,6 +464,10 @@ button a{
 
     .songlist{
         overflow-y: auto;
+    }
+    
+    .cardcontainer{
+        min-height: 70vh;
     }
 }
 
@@ -564,6 +569,13 @@ button a{
         margin-left: 30px;
     }
 
+    .playbar{
+        bottom: 17%;
+    }
+
+    .down{
+         bottom: -50%;
+    }
 }
 
 @media (max-width: 375px) {
@@ -581,4 +593,5 @@ button a{
     }
 
 }
+
 
