@@ -36,7 +36,9 @@ async function main() {
       "Wedding%20Nasheed%20-%20Mohammad%20Al%20Muqit.mp3",
       "Ya%20Nabi%20Salam%20Alayka%20-%20Maher%20Zain.mp3",
       "Taweel%20Al%20Shawq%20-%20Ahmed%20Bukhater.mp3",
-      "Love%20and%20Life%20-%20Baraa%20Masoud.mp3"
+      "Love%20and%20Life%20-%20Baraa%20Masoud.mp3",
+      "Assubhu%20Bada%20-%20Usaid%20Zahid%20Siddique.mp3",
+      "My%20Hope%20-%20Muhammad%20al%20Muqit.mp3"
     ];
 
     let songul = document.querySelector(".songlist ul");
@@ -166,6 +168,7 @@ async function main() {
 }
 
 main();
+
 
 
 
